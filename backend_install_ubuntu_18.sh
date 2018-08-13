@@ -34,7 +34,7 @@ ldconfig
 cd ../ && rm -rf libsodium*
 echo "Installing Shadowsocksr server from GitHub..."
 mkdir /soft
-cd /tmp && git clone -b manyuser https://github.com/esdeathlove/shadowsocks.git
+cd /tmp && git clone -b manyuser https://gitee.com/itmihang/shadowsocks.git
 mv -f shadowsocks /soft
 cd /soft/shadowsocks
 python -m pip install --upgrade pip
