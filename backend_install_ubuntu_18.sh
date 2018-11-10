@@ -26,7 +26,7 @@ apt install git python-setuptools python-pip build-essential ntpdate htop -y
 echo "Please select correct system timezone for your node."
 dpkg-reconfigure tzdata
 echo "Installing libsodium..."
-wget https://github.com/jedisct1/libsodium/releases/download/1.0.16/libsodium-1.0.16.tar.gz
+wget http://files.git.oschina.net/group1/M00/05/80/PaAvDFvmo0WAeumoAB0oMzHjwSg4519.gz?token=5e5c0bca3c5d39e9c56d894102868459&ts=1541841744&attname=libsodium-1.0.16.tar.gz
 tar xf libsodium-1.0.16.tar.gz && cd libsodium-1.0.16
 ./configure && make -j2 && make install
 echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
